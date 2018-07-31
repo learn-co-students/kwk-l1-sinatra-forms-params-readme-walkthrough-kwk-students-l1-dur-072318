@@ -8,8 +8,8 @@ class App < Sinatra::Base
 
   # Add your post route and action below
   post '/newname' do
-    @your_first_and_last_name=params[:your_first_and_last_name]
-    @celebrity_crush=params[:celebrity_crush]
+    @your_first_name=params[:your_first_name]
+    @celebrity_crush_last_name=params[:celebrity_crush_last_name]
     erb :name
   end
 end
